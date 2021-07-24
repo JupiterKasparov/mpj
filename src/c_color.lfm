@@ -1,0 +1,306 @@
+object FrmSelectColorMPJ: TFrmSelectColorMPJ
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 600
+  ClientHeight = 240
+  ClientWidth = 600
+  TabOrder = 0
+  DesignLeft = 772
+  DesignTop = 372
+  object PnTitle: TPanel
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 600
+    HelpType = htKeyword
+    HelpKeyword = 'LTRt'
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Color selection'
+    Color = clMaroon
+    ParentColor = False
+    TabOrder = 0
+  end
+  object PnMain: TPanel
+    Left = 0
+    Height = 220
+    Top = 20
+    Width = 600
+    HelpType = htKeyword
+    HelpKeyword = 'LBRTb'
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 220
+    ClientWidth = 600
+    Color = clTeal
+    ParentColor = False
+    TabOrder = 1
+    object VwColorSpace: TPanel
+      Cursor = crCross
+      Left = 416
+      Height = 160
+      Top = 8
+      Width = 160
+      BevelOuter = bvNone
+      Color = clBlack
+      ParentColor = False
+      TabOrder = 0
+      OnClick = goSelectColorFromColorSpace
+      OnPaint = goDrawColorSpace
+    end
+    object BtnOK: TPanel
+      Left = 216
+      Height = 20
+      Top = 184
+      Width = 75
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'Set'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 1
+      OnClick = goCloseYes
+    end
+    object BtnCancel: TPanel
+      Left = 304
+      Height = 20
+      Top = 184
+      Width = 75
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'Cancel'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 2
+      OnClick = goCloseNo
+    end
+    object LbColor: TLabel
+      Left = 424
+      Height = 20
+      Top = 185
+      Width = 50
+      AutoSize = False
+      Caption = 'Color:'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object VwColorRect: TPanel
+      Left = 544
+      Height = 20
+      Top = 184
+      Width = 34
+      BevelOuter = bvNone
+      TabOrder = 3
+      OnPaint = goPaintColorRect
+    end
+    object PnRed: TPanel
+      Left = 8
+      Height = 50
+      Top = 8
+      Width = 386
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 386
+      TabOrder = 4
+      object LbRed: TLabel
+        Left = 0
+        Height = 20
+        Top = 0
+        Width = 50
+        AutoSize = False
+        Caption = 'Red:'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object PnRedValue: TPanel
+        Left = 336
+        Height = 20
+        Top = 30
+        Width = 50
+        HelpType = htKeyword
+        HelpKeyword = 'LBRTe'
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 50
+        Color = clBlue
+        ParentColor = False
+        TabOrder = 0
+        object IntRed: TEdit
+          Left = 2
+          Height = 16
+          Top = 2
+          Width = 46
+          Align = alClient
+          BorderSpacing.Around = 2
+          BorderStyle = bsNone
+          MaxLength = 3
+          NumbersOnly = True
+          OnChange = goChangeColorValues
+          ParentColor = True
+          TabOrder = 0
+          Text = '0'
+        end
+      end
+      inline ScbRed: TFrmHorzSb
+        Top = 30
+        Width = 329
+        ClientWidth = 329
+        TabOrder = 1
+        inherited PnSlider: TPanel
+          Width = 265
+          ClientWidth = 265
+          inherited ScDrag: TPanel
+            Left = 0
+            Width = 10
+          end
+        end
+        inherited BtnRight: TPanel
+          Left = 297
+        end
+      end
+    end
+    object PnGreen: TPanel
+      Left = 8
+      Height = 50
+      Top = 64
+      Width = 386
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 386
+      TabOrder = 6
+      object LbGreen: TLabel
+        Left = 0
+        Height = 20
+        Top = 0
+        Width = 50
+        AutoSize = False
+        Caption = 'Green:'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object PnGreenValue: TPanel
+        Left = 336
+        Height = 20
+        Top = 30
+        Width = 50
+        HelpType = htKeyword
+        HelpKeyword = 'LBRTe'
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 50
+        Color = clBlue
+        ParentColor = False
+        TabOrder = 0
+        object IntGreen: TEdit
+          Left = 2
+          Height = 16
+          Top = 2
+          Width = 46
+          Align = alClient
+          BorderSpacing.Around = 2
+          BorderStyle = bsNone
+          MaxLength = 3
+          NumbersOnly = True
+          OnChange = goChangeColorValues
+          ParentColor = True
+          TabOrder = 0
+          Text = '0'
+        end
+      end
+      inline ScbGreen: TFrmHorzSb
+        Top = 30
+        Width = 329
+        ClientWidth = 329
+        TabOrder = 1
+        inherited PnSlider: TPanel
+          Width = 265
+          ClientWidth = 265
+          inherited ScDrag: TPanel
+            Left = 0
+            Width = 10
+          end
+        end
+        inherited BtnRight: TPanel
+          Left = 297
+        end
+      end
+    end
+    object PnBlue: TPanel
+      Left = 8
+      Height = 50
+      Top = 120
+      Width = 386
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 386
+      TabOrder = 5
+      object LbBlue: TLabel
+        Left = 0
+        Height = 20
+        Top = 0
+        Width = 50
+        AutoSize = False
+        Caption = 'Blue:'
+        Layout = tlCenter
+        ParentColor = False
+      end
+      object PnBlueValue: TPanel
+        Left = 336
+        Height = 20
+        Top = 30
+        Width = 50
+        HelpType = htKeyword
+        HelpKeyword = 'LBRTe'
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 50
+        Color = clBlue
+        ParentColor = False
+        TabOrder = 0
+        object IntBlue: TEdit
+          Left = 2
+          Height = 16
+          Top = 2
+          Width = 46
+          Align = alClient
+          BorderSpacing.Around = 2
+          BorderStyle = bsNone
+          MaxLength = 3
+          NumbersOnly = True
+          OnChange = goChangeColorValues
+          ParentColor = True
+          TabOrder = 0
+          Text = '0'
+        end
+      end
+      inline ScbBlue: TFrmHorzSb
+        Top = 30
+        Width = 329
+        ClientWidth = 329
+        TabOrder = 1
+        inherited PnSlider: TPanel
+          Width = 265
+          ClientWidth = 265
+          inherited ScDrag: TPanel
+            Left = 0
+            Width = 10
+          end
+        end
+        inherited BtnRight: TPanel
+          Left = 297
+        end
+      end
+    end
+  end
+end

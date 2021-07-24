@@ -1,0 +1,114 @@
+object FrmExtInfo: TFrmExtInfo
+  Left = 0
+  Height = 400
+  Top = 0
+  Width = 500
+  ClientHeight = 400
+  ClientWidth = 500
+  Color = clTeal
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 1063
+  DesignTop = 433
+  object PnTitle: TPanel
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 500
+    HelpType = htKeyword
+    HelpKeyword = 'LBRTt'
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'DUMMY'
+    Color = clMaroon
+    ParentColor = False
+    TabOrder = 0
+  end
+  object PnMain: TPanel
+    Left = 0
+    Height = 380
+    Top = 20
+    Width = 500
+    HelpType = htKeyword
+    HelpKeyword = 'LBRb'
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 380
+    ClientWidth = 500
+    TabOrder = 1
+    object PnExtInfo: TPanel
+      Left = 8
+      Height = 330
+      Top = 8
+      Width = 482
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTm'
+      BevelOuter = bvNone
+      ClientHeight = 330
+      ClientWidth = 482
+      Color = clNavy
+      ParentColor = False
+      TabOrder = 0
+      OnPaint = goPaintContent
+      object LbExtInfo: TLabel
+        Left = 8
+        Height = 192
+        Top = 8
+        Width = 426
+        AutoSize = False
+        Layout = tlCenter
+        ParentColor = False
+        WordWrap = True
+      end
+      inline ScbExtInfo: TFrmVertSb
+        Left = 450
+        Height = 330
+        Align = alRight
+        ClientHeight = 330
+        inherited BtnDown: TPanel
+          Top = 310
+        end
+        inherited PnSlider: TPanel
+          Height = 290
+          ClientHeight = 290
+        end
+      end
+    end
+    object BtnOK: TPanel
+      Left = 216
+      Height = 20
+      Top = 344
+      Width = 75
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'OK'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 1
+      OnClick = goClose
+    end
+    object BtnToggleMode: TPanel
+      Left = 390
+      Height = 20
+      Top = 344
+      Width = 100
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'Toggle Pic / Info'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 100
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 2
+      OnClick = goToggleMode
+    end
+  end
+end

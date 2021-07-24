@@ -1,0 +1,24 @@
+object FrmFile: TFrmFile
+  Left = 0
+  Height = 20
+  Top = 0
+  Width = 466
+  ClientHeight = 20
+  ClientWidth = 466
+  Constraints.MaxHeight = 20
+  TabOrder = 0
+  DesignLeft = 892
+  DesignTop = 347
+  object PnText: TPanel
+    Cursor = 5
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 466
+    Align = alClient
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    Caption = 'Fn'
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,1409 @@
+object FrmSettings: TFrmSettings
+  Left = 0
+  Height = 475
+  Top = 0
+  Width = 500
+  ClientHeight = 475
+  ClientWidth = 500
+  Color = clTeal
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 938
+  DesignTop = 352
+  object PnTitle: TPanel
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 500
+    HelpType = htKeyword
+    HelpKeyword = 'LBRTt'
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Settings'
+    Color = clMaroon
+    ParentColor = False
+    TabOrder = 0
+    OnClick = goSimpleClick
+  end
+  object PnMain: TPanel
+    Left = 0
+    Height = 455
+    Top = 20
+    Width = 500
+    HelpType = htKeyword
+    HelpKeyword = 'LBRb'
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 455
+    ClientWidth = 500
+    TabOrder = 1
+    OnClick = goSimpleClick
+    object PnWorkSettings: TPanel
+      Left = 8
+      Height = 216
+      Top = 8
+      Width = 320
+      BevelOuter = bvNone
+      ClientHeight = 216
+      ClientWidth = 320
+      TabOrder = 0
+      OnClick = goSimpleClick
+      object PnExtPLS: TPanel
+        Left = 0
+        Height = 20
+        Top = 84
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 0
+        OnClick = goSimpleClick
+        object LbExtPLS: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Use #EXTM3U or PLS ver. 2 playlist format'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbExtPLS: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object PnShowTrunc: TPanel
+        Left = 0
+        Height = 20
+        Top = 56
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 1
+        OnClick = goSimpleClick
+        object LbShowTrunc: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Show long track names as a tooltip below the playlist'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbShowTrunc: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object PnCopyPl: TPanel
+        Left = 0
+        Height = 20
+        Top = 28
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 2
+        OnClick = goSimpleClick
+        object LbCopyPl: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Copy music files with playlist'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbCopyPl: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object PnHighShuf: TPanel
+        Left = 0
+        Height = 20
+        Top = 0
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 3
+        OnClick = goSimpleClick
+        object LbHighShuf: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Highlight already played tracks in shuffle mode'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbHighShuf: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object PnExtInf: TPanel
+        Left = 0
+        Height = 20
+        Top = 112
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 4
+        OnClick = goSimpleClick
+        object LbExtInf: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Show extended info (double click on ID3)'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbExtInf: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object PnSkipEn: TPanel
+        Left = 0
+        Height = 20
+        Top = 140
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 5
+        OnClick = goSimpleClick
+        object LbSkipEn: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Allow tracks to be skipped in shuffle mode'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbSkipEn: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object PnPLAddMode: TPanel
+        Left = 0
+        Height = 20
+        Top = 196
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 6
+        OnClick = goSimpleClick
+        object LbPLAddMode: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 190
+          Align = alLeft
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'When opening playlist files:'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbPLAddMode: TPanel
+          Left = 198
+          Height = 20
+          Top = 0
+          Width = 114
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alClient
+          Alignment = taLeftJustify
+          BevelOuter = bvNone
+          ClientHeight = 20
+          ClientWidth = 114
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goShowPLAddModes
+          object BtnPLAddModeSelect: TPanel
+            Left = 94
+            Height = 20
+            Top = 0
+            Width = 20
+            HelpType = htKeyword
+            HelpKeyword = 'LBRTX'
+            Align = alRight
+            BevelOuter = bvNone
+            Caption = '▼'
+            Color = clGreen
+            ParentColor = False
+            TabOrder = 0
+            OnClick = goShowPLAddModes
+          end
+        end
+      end
+      object PnID3T: TPanel
+        Left = 0
+        Height = 20
+        Top = 168
+        Width = 312
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 312
+        TabOrder = 8
+        OnClick = goSimpleClick
+        object LbID3T: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 284
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 8
+          Caption = 'Show tracks'' ID3 titles (if any)'
+          Layout = tlCenter
+          ParentColor = False
+          OnClick = goSimpleClick
+        end
+        object CbID3T: TPanel
+          Left = 292
+          Height = 20
+          Top = 0
+          Width = 20
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTc'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = 8421631
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeBoolOption
+        end
+      end
+      object LstPLAddMode: TPanel
+        Left = 80
+        Height = 40
+        Top = 156
+        Width = 220
+        HelpType = htKeyword
+        HelpKeyword = 'LBRTe'
+        BevelOuter = bvNone
+        ClientHeight = 40
+        ClientWidth = 220
+        Color = clBlue
+        ParentColor = False
+        TabOrder = 7
+        Visible = False
+        object LstE_PLAddMode_ResetPL: TPanel
+          Left = 1
+          Height = 20
+          Top = 1
+          Width = 218
+          Align = alTop
+          Alignment = taLeftJustify
+          BorderSpacing.Around = 1
+          BevelOuter = bvNone
+          Caption = 'Replace with new playlist'
+          TabOrder = 0
+          OnClick = goSetPLAddMode
+        end
+        object LstE_PLAddMode_AddToPL: TPanel
+          Left = 1
+          Height = 17
+          Top = 22
+          Width = 218
+          Align = alClient
+          Alignment = taLeftJustify
+          BorderSpacing.Around = 1
+          BevelOuter = bvNone
+          Caption = 'Append playlist'
+          TabOrder = 1
+          OnClick = goSetPLAddMode
+        end
+      end
+    end
+    object PnColorSettings: TPanel
+      Left = 326
+      Height = 440
+      Top = 8
+      Width = 172
+      BevelOuter = bvNone
+      ClientHeight = 440
+      ClientWidth = 172
+      TabOrder = 1
+      OnClick = goSimpleClick
+      object PnColorSongShuf: TPanel
+        Left = 4
+        Height = 20
+        Top = 364
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 0
+        object CbtColorSongShuf: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorSongShuf: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Played track color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnColorSongSkip: TPanel
+        Left = 4
+        Height = 20
+        Top = 336
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 1
+        object CbtColorSongSkip: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorSongSkip: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Skipped track color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnColorSong: TPanel
+        Left = 4
+        Height = 20
+        Top = 252
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 2
+        object CbtColorSong: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorSong: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Track color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnColorSongSel: TPanel
+        Left = 4
+        Height = 20
+        Top = 280
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 3
+        object CbtColorSongSel: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorSongSel: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Current track color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnColorSongDrag: TPanel
+        Left = 4
+        Height = 20
+        Top = 308
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 4
+        object CbtColorSongDrag: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorSongDrag: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Moved track color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnButtonDisColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 112
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 5
+        object CbtButtonDisColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbButtonDisColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Disabled button color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnFontColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 140
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 6
+        object CbtFontColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbFontColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Font color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnFontColorDis: TPanel
+        Left = 4
+        Height = 20
+        Top = 168
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 7
+        object CbtFontColorDis: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbFontColorDis: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Disabled font color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnEditColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 196
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 8
+        object CbtEditColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbEditColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Text box and list color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnMsgColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 224
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 9
+        object CbtMsgColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbMsgColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Message box color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnColorMainBg: TPanel
+        Left = 4
+        Height = 20
+        Top = 0
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 10
+        object CbtColorMainBg: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorMainBg: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Main window color: '
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnColorTitleBg: TPanel
+        Left = 4
+        Height = 20
+        Top = 28
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 11
+        object CbtColorTitleBg: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbColorTitleBg: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Title and scrollbar color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBgColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 56
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 12
+        object CbtBgColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbBgColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Dialog background color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnButtonColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 84
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 13
+        object CbtButtonColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbButtonColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Button color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnCbColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 392
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 14
+        object CbtCbColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbCbColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Checkbox color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnDragColor: TPanel
+        Left = 4
+        Height = 20
+        Top = 420
+        Width = 166
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 166
+        TabOrder = 15
+        object CbtDragColor: TPanel
+          Left = 146
+          Height = 20
+          Top = 0
+          Width = 20
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clFuchsia
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goChangeColor
+          OnPaint = goPaintColorButton
+        end
+        object LbDragColor: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 142
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Slider thumb color:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+    end
+    object PnKeyBindings: TPanel
+      Left = 8
+      Height = 170
+      Top = 224
+      Width = 320
+      BevelOuter = bvNone
+      ClientHeight = 170
+      ClientWidth = 320
+      TabOrder = 2
+      object PnBdCancel: TPanel
+        Left = 0
+        Height = 52
+        Top = 8
+        Width = 320
+        BevelOuter = bvNone
+        ClientHeight = 52
+        ClientWidth = 320
+        TabOrder = 0
+        OnClick = goSimpleClick
+        object LbBdCancel: TLabel
+          Left = 1
+          Height = 50
+          Top = 1
+          Width = 318
+          Align = alClient
+          AutoSize = False
+          BorderSpacing.Around = 1
+          Caption = 'Click on a box and press a key to change.'#13#10'ESC: Cancel, Backspace: Unbind'
+          Layout = tlCenter
+          ParentColor = False
+          WordWrap = True
+        end
+      end
+      object PnBdVolDn: TPanel
+        Left = 0
+        Height = 20
+        Top = 64
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 1
+        object BdVolDn: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdVolDn: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Volume Down:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdVolUp: TPanel
+        Left = 160
+        Height = 20
+        Top = 64
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 2
+        object BdVolUp: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdVolUp: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Volume Up:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdTrPrev: TPanel
+        Left = 0
+        Height = 20
+        Top = 92
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 3
+        object BdTrPrev: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdTrPrev: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Previous track:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdTrNext: TPanel
+        Left = 160
+        Height = 20
+        Top = 92
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 4
+        object BdTrNext: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdTrNext: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Next track:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdStop: TPanel
+        Left = 0
+        Height = 20
+        Top = 120
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 5
+        object BdStop: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdStop: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Stop playback:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdPause: TPanel
+        Left = 160
+        Height = 20
+        Top = 120
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 6
+        object BdPause: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdPause: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Pause/Resume:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdStart: TPanel
+        Left = 0
+        Height = 20
+        Top = 148
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 7
+        object BdStart: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdStart: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Start playback:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object PnBdDel: TPanel
+        Left = 160
+        Height = 20
+        Top = 148
+        Width = 150
+        BevelOuter = bvNone
+        ClientHeight = 20
+        ClientWidth = 150
+        TabOrder = 8
+        object BdDel: TPanel
+          Left = 100
+          Height = 20
+          Top = 0
+          Width = 50
+          HelpType = htKeyword
+          HelpKeyword = 'LBRTe'
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clBlue
+          ParentColor = False
+          TabOrder = 0
+          OnClick = goBindKey
+        end
+        object LbBdDel: TLabel
+          Left = 0
+          Height = 20
+          Top = 0
+          Width = 96
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          BorderSpacing.Right = 4
+          Caption = 'Delete track:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+    end
+    object BtnResetDefs: TPanel
+      Left = 184
+      Height = 20
+      Top = 428
+      Width = 128
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'Restore defaults'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 128
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 128
+      ParentColor = False
+      TabOrder = 3
+      OnClick = goResetDefs
+    end
+    object BtnCancel: TPanel
+      Left = 96
+      Height = 20
+      Top = 428
+      Width = 75
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'Cancel'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 4
+      OnClick = goClose
+    end
+    object BtnOK: TPanel
+      Left = 8
+      Height = 20
+      Top = 428
+      Width = 75
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'OK'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 5
+      OnClick = goApply
+    end
+  end
+  object TmrSettingsColorWait: TTimer
+    Enabled = False
+    Interval = 25
+    OnTimer = goWaitForColorDlg
+    left = 48
+    top = 8
+  end
+  object TmrSettingsKbWait: TTimer
+    Enabled = False
+    Interval = 250
+    OnTimer = goWaitForKey
+    left = 160
+    top = 8
+  end
+end

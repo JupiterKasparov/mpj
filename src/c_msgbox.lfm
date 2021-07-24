@@ -1,0 +1,73 @@
+object FrmMsgBox: TFrmMsgBox
+  Left = 0
+  Height = 150
+  Top = 0
+  Width = 440
+  ClientHeight = 150
+  ClientWidth = 440
+  Color = clNavy
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 701
+  DesignTop = 137
+  object PnTitle: TPanel
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 440
+    HelpType = htKeyword
+    HelpKeyword = 'LBRTt'
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clMaroon
+    ParentColor = False
+    TabOrder = 0
+  end
+  object PnContent: TPanel
+    Left = 0
+    Height = 130
+    Top = 20
+    Width = 440
+    HelpType = htKeyword
+    HelpKeyword = 'LBRm'
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 130
+    ClientWidth = 440
+    TabOrder = 1
+    object BtnOK: TPanel
+      Left = 184
+      Height = 20
+      Top = 94
+      Width = 75
+      HelpType = htKeyword
+      HelpKeyword = 'LBRTX'
+      BevelOuter = bvNone
+      Caption = 'OK'
+      Color = clGreen
+      Constraints.MaxHeight = 20
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 20
+      Constraints.MinWidth = 75
+      ParentColor = False
+      TabOrder = 0
+      OnClick = goClose
+    end
+    object LbMessage: TLabel
+      Left = 8
+      Height = 80
+      Top = 8
+      Width = 420
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Constraints.MaxHeight = 80
+      Constraints.MaxWidth = 420
+      Constraints.MinHeight = 80
+      Constraints.MinWidth = 420
+      Layout = tlCenter
+      ParentColor = False
+      WordWrap = True
+    end
+  end
+end
