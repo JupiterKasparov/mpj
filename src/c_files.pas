@@ -720,6 +720,7 @@ begin
       end;
     PnFilterSelect.Height := Length(Extensions) * 21;
     PnFilterSelect.Top := PnFooter.Top - PnFilterSelect.Height + 1;
+    goChangeFileName(Self);
 end;
 
 procedure TFrmFileDialogMPJ.Accept;
