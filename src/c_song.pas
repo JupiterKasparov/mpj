@@ -103,7 +103,7 @@ function TFrmSong.GetMaxSpeed: real;
 var
     part: real;
 begin
-    if (_ofreq <= 0) then
+    if (_ofreq <= 0) or (not IsValid) then
         Result := 0.0
     else
       begin
@@ -157,7 +157,10 @@ end;
 
 function TFrmSong.GetLengthSec: integer;
 begin
-    Result := round(_origlen / GetSpeed);
+    if IsValid then
+      Result := round(_origlen / GetSpeed)
+    else
+      Result := 0;
 end;
 
 function TFrmSong.IsPaused: boolean;

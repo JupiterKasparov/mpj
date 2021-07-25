@@ -19,6 +19,8 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
+        <TopLine Value="1731"/>
+        <CursorPos X="9" Y="1703"/>
         <UsageCount Value="166"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -74,8 +76,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <EditorIndex Value="13"/>
-        <TopLine Value="425"/>
-        <CursorPos X="47" Y="427"/>
         <UsageCount Value="166"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -182,118 +182,122 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="147" TopLine="132"/>
+        <Filename Value="main.pas"/>
       </Position1>
       <Position2>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="149" TopLine="132"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="154" Column="27" TopLine="134"/>
       </Position2>
       <Position3>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="151" TopLine="132"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="155" Column="30" TopLine="135"/>
       </Position3>
       <Position4>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="153" TopLine="132"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="278" Column="25" TopLine="257"/>
       </Position4>
       <Position5>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="154" TopLine="133"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1687" Column="28" TopLine="1632"/>
       </Position5>
       <Position6>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="159" TopLine="146"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="14" Column="40"/>
       </Position6>
       <Position7>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="160" TopLine="146"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="154" Column="27" TopLine="134"/>
       </Position7>
       <Position8>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="161" TopLine="146"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="155" Column="30" TopLine="135"/>
       </Position8>
       <Position9>
-        <Filename Value="main.pas"/>
-        <Caret Line="1395" TopLine="1382"/>
+        <Filename Value="frames.lpr"/>
       </Position9>
       <Position10>
-        <Filename Value="main.pas"/>
-        <Caret Line="1401" TopLine="1382"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="524" TopLine="508"/>
       </Position10>
       <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="1402" TopLine="1382"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="499" TopLine="494"/>
       </Position11>
       <Position12>
-        <Filename Value="c_vertsb.pas"/>
-        <Caret Line="139" TopLine="126"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="500" TopLine="494"/>
       </Position12>
       <Position13>
-        <Filename Value="main.pas"/>
-        <Caret Line="1402" TopLine="1388"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="501" TopLine="494"/>
       </Position13>
       <Position14>
-        <Filename Value="main.pas"/>
-        <Caret Line="1403" TopLine="1388"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="502" TopLine="494"/>
       </Position14>
       <Position15>
-        <Filename Value="main.pas"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="503" TopLine="494"/>
       </Position15>
       <Position16>
         <Filename Value="c_song.pas"/>
+        <Caret Line="504" TopLine="494"/>
       </Position16>
       <Position17>
         <Filename Value="c_song.pas"/>
-        <Caret Line="448" Column="37" TopLine="436"/>
+        <Caret Line="505" TopLine="494"/>
       </Position17>
       <Position18>
-        <Filename Value="main.pas"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="506" TopLine="494"/>
       </Position18>
       <Position19>
-        <Filename Value="main.pas"/>
-        <Caret Line="288" Column="101" TopLine="275"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="507" TopLine="494"/>
       </Position19>
       <Position20>
-        <Filename Value="c_extinfo.pas"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="508" TopLine="494"/>
       </Position20>
       <Position21>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="93" Column="46" TopLine="68"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="509" TopLine="494"/>
       </Position21>
       <Position22>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="64" Column="76" TopLine="40"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="510" TopLine="494"/>
       </Position22>
       <Position23>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="65" Column="55" TopLine="46"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="511" TopLine="494"/>
       </Position23>
       <Position24>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="66" Column="48" TopLine="53"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="513" TopLine="494"/>
       </Position24>
       <Position25>
-        <Filename Value="c_extinfo.pas"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="514" TopLine="494"/>
       </Position25>
       <Position26>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="113" Column="19" TopLine="101"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="516" TopLine="496"/>
       </Position26>
       <Position27>
-        <Filename Value="c_extinfo.pas"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="518" TopLine="498"/>
       </Position27>
       <Position28>
         <Filename Value="c_song.pas"/>
-        <Caret Line="432" Column="9" TopLine="427"/>
+        <Caret Line="519" TopLine="499"/>
       </Position28>
       <Position29>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="141" Column="23" TopLine="115"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="520" TopLine="500"/>
       </Position29>
       <Position30>
-        <Filename Value="c_extinfo.pas"/>
-        <Caret Line="137" Column="55" TopLine="125"/>
+        <Filename Value="c_song.pas"/>
+        <Caret Line="522" TopLine="502"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

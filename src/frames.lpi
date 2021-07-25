@@ -18,7 +18,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="179"/>
+      <BuildNr Value="180"/>
       <StringTable Comments="Jupiter's Lightweight MusicPlayer" CompanyName="Csaba Homan" FileDescription="Jupiter's Lightweight MusicPlayer" InternalName="frames.exe" LegalCopyright="Csaba Homan" LegalTrademarks="(C) Jupiter - 2017" OriginalFilename="MusPlay_Jupiter.exe" ProductName="Jupiter's Lightweight MusicPlayer" ProductVersion=""/>
     </VersionInfo>
     <BuildModes Count="3">
