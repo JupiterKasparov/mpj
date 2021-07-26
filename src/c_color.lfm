@@ -38,9 +38,9 @@ object FrmSelectColorMPJ: TFrmSelectColorMPJ
     TabOrder = 1
     object VwColorSpace: TPanel
       Cursor = crCross
-      Left = 416
+      Left = 418
       Height = 160
-      Top = 8
+      Top = 10
       Width = 160
       BevelOuter = bvNone
       Color = clBlack
