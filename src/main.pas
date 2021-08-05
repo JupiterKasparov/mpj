@@ -509,7 +509,9 @@ procedure TWndMain.goWindowProgressMain(Sender: TObject);
                     ScbTrackInfo.Percentage := 0.0;
                     ScbTrackInfo.Max := 0;
                   end;
-              end;
+              end
+            else if PnTrackProps.Visible then
+              PnTrackProps.Visible := false;
             if not songs[songpos].Stopped then
               begin
                 songs[songpos].GetPosition(h, m, s);
